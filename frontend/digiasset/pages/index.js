@@ -42,7 +42,7 @@ export default function CallToActionWithVideo() {
                 position: 'absolute',
                 bottom: 1,
                 left: 0,
-                bg: 'green.400',
+                bg: 'blue.400',
                 zIndex: -1,
               }}>
               Decentralized Finance,
@@ -71,7 +71,7 @@ export default function CallToActionWithVideo() {
               fontWeight={'normal'}
               px={6}
               colorScheme={'red'}
-              bg={'green.400'}
+              bg={'blue.400'}
               _hover={{ bg: 'red.500' }}>
               Get started
             </Button>
