@@ -3,12 +3,14 @@ import styled from 'styled-components'
 const ImageTextContainer = styled.div`
   display: flex;
   align-items: center;
-  width: 1000px;
+  width: 1200px;
+  height: 300px
+  margin-right: 1rem
 `
 
 const Image = styled.img`
-  width: 2000px;
-  height: 400px;
+  width: 1000px;
+  height: 300px;
   margin-left: 1rem;
 `
 
@@ -17,9 +19,14 @@ const Text = styled.div``
 const ImageText = () => (
   <ImageTextContainer>
     <Text>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede
+    Our digital asset management app allows the public to easily track 
+    the financial activities of public servants for financial transparency, 
+    audit and integrity. With our platform, you can access real-time information 
+    on financial transactions, budgets, and expenses, providing a clear picture 
+    of how public funds are being used. By promoting financial transparency and 
+    accountability, we aim to promote integrity and trust in government institutions.
     </Text>
-    <Image src='https://bitcoin.org/img/icons/opengraph.png' alt='Bitcoin'/>
+    <Image src='https://images.pexels.com/photos/7567434/pexels-photo-7567434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='Bitcoin'/>
   </ImageTextContainer>
 )
 

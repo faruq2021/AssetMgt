@@ -10,4 +10,4 @@ const Welcome = () => (
   <WelcomeText>Welcome to DigiAsset! Click on Audit Asset to begin Financial Transparency.</WelcomeText>
 )
 
-export default Welcome
+export default Welcome;
