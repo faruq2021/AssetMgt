@@ -11,7 +11,7 @@ const NavContainer = styled.div`
   background-color: #0000ff;
   color: #fff;
 `;
-
+ 
 const NavLogo = styled.img`
   height: 20px;
 `;

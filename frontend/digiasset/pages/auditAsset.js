@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import Link from "next/link";
 import { Web3Context } from "../contexts/Web3Context";
 import Nav from "@/components/Nav";
-import Footer from "@/components/Footer";
+
 import { utils } from "ethers";
 import {
   Button,
@@ -16,7 +16,7 @@ import {
 } from "@chakra-ui/react";
 import "../pages/auditAsset";
 
-const auditAsset = () => {
+const AuditAsset = () => {
   const { connected, account, connectWallet, getCoinBalance, getContract } =
     useContext(Web3Context);
   const shortenAddress = (address) => {
@@ -178,4 +178,4 @@ const auditAsset = () => {
   );
 };
 
-export default auditAsset;
+export default AuditAsset;
