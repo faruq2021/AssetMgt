@@ -1,4 +1,4 @@
-# AssetMgt
+# DigiAsset
 **PROJECT TITLE
 
 DigiAsset
@@ -8,6 +8,8 @@ DigiAsset
 This app is designed to allow the public to track the financial activities of public servants for financial transparency, audit, and integrity. It enables users to view the financial transactions of public servants in real-time, making it easy to identify any discrepancies or suspicious activities. This app is built on the principles of open data, allowing for easy access and transparency of government financial activities.
 
 **PROJECT SNAPSHOT image
+![image](https://user-images.githubusercontent.com/78708123/214106449-93d09a52-d582-4dcc-b634-f081db7cc23f.png)
+
 
 **LIVE SITE URL
 
