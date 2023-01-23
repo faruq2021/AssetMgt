@@ -30,6 +30,11 @@ const Nav = () => (
     <Link href="/">
       <NavLogo src={logo} alt="Logo" />
     </Link>
+    <Link href="/">
+        <NavLink>
+          <Button colorScheme="blue">Home</Button>
+        </NavLink>
+      </Link>
     <NavLinksContainer>
       <Link href="/about">
         <NavLink>
