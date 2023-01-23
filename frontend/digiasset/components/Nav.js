@@ -9,7 +9,7 @@ const NavContainer = styled.div`
   align-items: center;
   padding: 1rem;
   background-color: #0000ff;
-  color: #fff;
+  color: #fff; 
 `;
  
 const NavLogo = styled.img`
