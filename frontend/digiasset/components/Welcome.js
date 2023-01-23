@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const WelcomeText = styled.div`
   font-weight: bold;
