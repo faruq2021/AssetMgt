@@ -14,7 +14,7 @@ const NavContainer = styled.div`
 const NavLogo = styled.img`
   height: 20px;
 `
-const NavLinksContainer = styled.div`
+const NavLinksContainer = styled.div` 
   display: flex;
   align-items: center;
   justify-content: space-between;

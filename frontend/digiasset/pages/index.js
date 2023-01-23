@@ -3,7 +3,7 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer"
 import Feature from "../components/Features"
 import Welcome from '@/components/Welcome';
-import Session from "@/components/Session"
+// import Session from "@/components/Session"
 
 // import Navbar from "../components/Navbar"
 
@@ -24,8 +24,8 @@ const Home = () => (
 
     <Nav />
     <Welcome/>
-    <Session/>
-    
+    {/* <Session/> */}
+
     {/* <Navbar/> */}
     {/* <main>
       <h1>Welcome to my App!</h1>

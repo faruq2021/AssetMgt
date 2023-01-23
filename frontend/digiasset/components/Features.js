@@ -59,11 +59,9 @@ import {
               alignSelf={'flex-start'}
               rounded={'md'}
             ></Text>
-            <Heading>A digital Product design agency</Heading>
+            <Heading>A digital asset Management Agency</Heading>
             <Text color={'gray.500'} fontSize={'lg'}>
-              A town hall differfent from balablu, blublu, bulaba that is why they
-              can not make a down payment for a roasted corn on the highway, if
-              you love me, go and get your APV, and you must vote.
+            Our digital asset management app allows the public to easily track the financial activities of public servants for financial transparency, audit and integrity. With our platform, you can access real-time information on financial transactions, budgets, and expenses, providing a clear picture of how public funds are being used. By promoting financial transparency and accountability, we aim to promote integrity and trust in government institutions.
             </Text>
             <Stack
               spacing={4}
@@ -78,19 +76,19 @@ import {
                   <Icon as={IoAnalyticsSharp} color={'yellow.500'} w={5} h={5} />
                 }
                 iconBg={useColorModeValue('yellow.100', 'yellow.900')}
-                text={'Business Planning'}
+                text={'Asset Audit'}
               />
               <Feature
                 icon={<Icon as={IoLogoBitcoin} color={'green.500'} w={5} h={5} />}
                 iconBg={useColorModeValue('green.100', 'green.900')}
-                text={'Financial Planning'}
+                text={'Integrity'}
               />
               <Feature
                 icon={
                   <Icon as={IoSearchSharp} color={'purple.500'} w={5} h={5} />
                 }
                 iconBg={useColorModeValue('purple.100', 'purple.900')}
-                text={'Market Analysis'}
+                text={'Financial Transparency'}
               />
             </Stack>
           </Stack>

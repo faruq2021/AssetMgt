@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 
 const WelcomeText = styled.div`
+  font-weight: bold;
   font-size: 1.5rem;
   text-align: center;
-  font-weight: bold;
+  
 `
 
 const Welcome = () => (

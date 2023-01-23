@@ -3,13 +3,13 @@ import styled from 'styled-components'
 const ImageTextContainer = styled.div`
   display: flex;
   align-items: center;
-  width: 1200px;
-  height: 300px
+  width: 50%;
+  height: 300px;
   margin-right: 1rem
 `
 
 const Image = styled.img`
-  width: 1000px;
+  width: 50%;
   height: 300px;
   margin-left: 1rem;
 `
