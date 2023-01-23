@@ -1,0 +1,1 @@
+export {default as contractAbi} from "./assetmgt.json"
