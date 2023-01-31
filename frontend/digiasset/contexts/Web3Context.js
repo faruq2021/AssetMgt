@@ -4,7 +4,7 @@ import contractAbi from "../abi/assetmgt.json"
 
 
 export const Web3Context = createContext(null)
-const contractAddress = "0xEdF1c3E826eAC9E333fA548FDf910C86BbE14378"
+const contractAddress = "0xD99201a0887613053E7d2FFE72861d799FB9DB54"
 
 function Web3ContextProvider({children}) {
     const [account, setAccount] = useState(null)
