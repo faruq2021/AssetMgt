@@ -63,9 +63,6 @@ function Web3ContextProvider({children}) {
             const contractInstance = new Contract(contractAddress, contractAbi, signer)
         return contractInstance
         }
-        
-
-
     }
     const getCoinBalance = async(address) => {
         if(connected) {
@@ -73,12 +70,14 @@ function Web3ContextProvider({children}) {
                 const bal = await provider.getBalance(address) 
                 const formatedBalance = utils.formatUnits(bal, 18)
                 console.log(Number(formatedBalance).toFixed(4))
+                const coinBal=Number(formatedBalance).toFixed(4)
+                setBalance(coinBal);
             }catch(error){
                 console.log(error)
             }
         }
     }
-    const value = {connectWallet, account, connected, getContract,getCoinBalance }
+    const value = {connectWallet, account, balance, connected, getContract, getCoinBalance }
   return (
     <Web3Context.Provider value={value}>{children}</Web3Context.Provider> 
   )
