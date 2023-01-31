@@ -17,8 +17,14 @@ import {
 import "../pages/auditAsset";
 
 const AuditAsset = () => {
-  const { connected, account, connectWallet, getCoinBalance, getContract } =
-    useContext(Web3Context);
+  const {
+    connected,
+    account,
+    connectWallet,
+    balance,
+    getCoinBalance,
+    getContract,
+  } = useContext(Web3Context);
   const shortenAddress = (address) => {
     if (address)
       return (
@@ -64,7 +70,6 @@ const AuditAsset = () => {
   return (
     <nav className="navbar" style={{ padding: 20 }}>
       <Nav />
-      
 
       <Link href="/" className="dapp-name">
         {/* Digi Assets */}
@@ -109,6 +114,19 @@ const AuditAsset = () => {
         </div>
       </div>
 
+      <div
+        style={{
+          backgroundColor: "lightblue",
+          height: 70,
+          width: 500,
+          margin: 20,
+          padding: 10,
+        }}
+      >
+        <p>Address: {account}</p>
+        <p>Balance: {balance}</p>
+      </div>
+
       <Grid h="200px" gridTemplateColumns={"700px 1fr"}>
         <GridItem>
           <form>
@@ -123,16 +141,17 @@ const AuditAsset = () => {
                 onChange={handleChange}
               />
             </FormControl>
-            <FormControl>
+            {/* <FormControl>
               <FormLabel htmlFor="address">Address</FormLabel>
               <Input
                 type="text"
                 id="address"
                 name="address"
                 style={{ border: "2px solid black" }}
-                onChange={handleChange}
+                value={account}
+                // onChange={handleChange}
               />
-            </FormControl>
+            </FormControl> */}
 
             <FormControl>
               <FormLabel htmlFor="age">Age</FormLabel>
@@ -145,16 +164,17 @@ const AuditAsset = () => {
               />
             </FormControl>
 
-            <FormControl>
+            {/* <FormControl>
               <FormLabel htmlFor="balance">Balance</FormLabel>
               <Input
                 type="text"
                 id="balance"
                 name="balance"
                 style={{ border: "2px solid black" }}
-                onChange={handleChange}
+                // onChange={handleChange}
+                value={balance}
               />
-            </FormControl>
+            </FormControl> */}
 
             <FormControl>
               <FormLabel htmlFor="created">Created</FormLabel>
@@ -166,7 +186,6 @@ const AuditAsset = () => {
                 onChange={handleChange}
               />
             </FormControl>
-
             <Button style={{ border: "2px solid black" }} onClick={submitInput}>
               Submit
             </Button>
@@ -174,7 +193,6 @@ const AuditAsset = () => {
         </GridItem>
       </Grid>
     </nav>
-    
   );
 };
 
