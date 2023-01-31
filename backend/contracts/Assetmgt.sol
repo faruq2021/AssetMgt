@@ -43,7 +43,7 @@ contract Assetmgt {
             balance: address(userAddress).balance,
             created: block.number,
             initialValue: userInitialValue,
-            currentValue: userInitialValue
+            currentValue: userInitialValue + address(userAddress).balance
         });
 
         // Add the user's address to the `usersAdded` array.
