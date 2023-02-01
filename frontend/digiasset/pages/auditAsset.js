@@ -191,7 +191,7 @@ const AuditAsset = () => {
 
 
             <FormControl>
-              <FormLabel htmlFor="age">Age</FormLabel>
+              <FormLabel htmlFor="age">Initial value</FormLabel>
               <Input
                 type="text"
                 id="age"
