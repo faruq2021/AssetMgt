@@ -25,6 +25,7 @@ const AuditAsset = () => {
     getCoinBalance,
     getContract,
   } = useContext(Web3Context);
+
   const shortenAddress = (address) => {
     if (address)
       return (
@@ -33,6 +34,30 @@ const AuditAsset = () => {
         address.slice(address.length - 4, address.length)
       );
   };
+
+
+
+  const [user, setUser] = useState({
+    userName: '',
+    userAddress: '',
+    userAge: '',
+    userInitialValue: '',
+  });
+
+  const handleUserChange = (e) => {
+    let name = e.target.name;
+    let value = e.target.value;
+    user[name] = value;
+    setUser(user);
+  }
+
+  const submit = (e) => {
+    e.preventDefault();
+    console.log("inputData: ", user);
+  };
+
+
+
   const addUser = async (userAddress, userName, userAge, userInitialValue) => {
     const contractInstance = getContract();
     const response = await contractInstance.addUser(
@@ -54,18 +79,19 @@ const AuditAsset = () => {
     console.log("getuser: ", parseFloat(response[3]));
   };
 
-  const initialValue = { name: "", age: "", balance: "" };
-  const [input, setInput] = useState(initialValue);
+  // const initialValue = { name: "", age: "", balance: "" };
+  // const [input, setInput] = useState(initialValue);
   const connectedAccount = shortenAddress(account);
-  const handleChange = (e) => {
-    const name = e.target.name;
-    const value = e.target.value;
-    setInput({ ...input, [name]: value });
-  };
-  const submitInput = (e) => {
-    e.preventDefault();
-    console.log("inputData: ", input);
-  };
+
+  // const handleChange = (e) => {
+  //   const name = e.target.name;
+  //   const value = e.target.value;
+  //   setInput({ ...input, [name]: value });
+  // };
+  // const submitInput = (e) => {
+  //   e.preventDefault();
+  //   console.log("inputData: ", input);
+  // };
 
   return (
     <nav className="navbar" style={{ padding: 20 }}>
@@ -136,33 +162,45 @@ const AuditAsset = () => {
               <Input
                 type="text"
                 id="name"
-                name="name"
+                name="userName"
                 style={{ border: "2px solid black" }}
-                onChange={handleChange}
+                onChange={handleUserChange}
               />
             </FormControl>
-            {/* <FormControl>
+            <FormControl>
               <FormLabel htmlFor="address">Address</FormLabel>
               <Input
                 type="text"
                 id="address"
                 name="address"
                 style={{ border: "2px solid black" }}
-                value={account}
-                // onChange={handleChange}
+                onChange={handleUserChange}
               />
-            </FormControl> */}
+            </FormControl>
 
             <FormControl>
               <FormLabel htmlFor="age">Age</FormLabel>
               <Input
                 type="text"
                 id="age"
-                name="age"
+                name="userAge"
                 style={{ border: "2px solid black" }}
-                onChange={handleChange}
+                onChange={handleUserChange}
               />
             </FormControl>
+
+
+            <FormControl>
+              <FormLabel htmlFor="age">Age</FormLabel>
+              <Input
+                type="text"
+                id="age"
+                name="userInitialValue"
+                style={{ border: "2px solid black" }}
+                onChange={handleUserChange}
+              />
+            </FormControl>
+
 
             {/* <FormControl>
               <FormLabel htmlFor="balance">Balance</FormLabel>
@@ -183,10 +221,10 @@ const AuditAsset = () => {
                 id="created"
                 name="created"
                 style={{ border: "2px solid black" }}
-                onChange={handleChange}
+                onChange={handleUserChange}
               />
             </FormControl>
-            <Button style={{ border: "2px solid black" }} onClick={submitInput}>
+            <Button style={{ border: "2px solid black" }} onClick={submit}>
               Submit
             </Button>
           </form>
@@ -196,4 +234,5 @@ const AuditAsset = () => {
   );
 };
 
-export default AuditAsset; //
+export default AuditAsset;
+
