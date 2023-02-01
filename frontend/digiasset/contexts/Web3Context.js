@@ -58,6 +58,7 @@ function Web3ContextProvider({children}) {
     }
 
     const getContract = ()=> {
+        const signer = provider.getSigner(account)
         console.log("signer: ", signer)
         if(signer){
             const contractInstance = new Contract(contractAddress, contractAbi, signer)

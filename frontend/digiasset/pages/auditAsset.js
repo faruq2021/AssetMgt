@@ -36,7 +36,6 @@ const AuditAsset = () => {
   };
 
 
-
   const [user, setUser] = useState({
     userName: '',
     userAddress: '',
@@ -59,6 +58,7 @@ const AuditAsset = () => {
 
 
   const addUser = async (userAddress, userName, userAge, userInitialValue) => {
+    console.log("My account", account)
     const contractInstance = getContract();
     const response = await contractInstance.addUser(
       userAddress,
