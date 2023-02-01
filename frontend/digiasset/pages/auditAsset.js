@@ -194,7 +194,7 @@ const AuditAsset = () => {
               <FormLabel htmlFor="age">Initial value</FormLabel>
               <Input
                 type="text"
-                id="age"
+                id="Initial Value"
                 name="userInitialValue"
                 style={{ border: "2px solid black" }}
                 onChange={handleUserChange}
