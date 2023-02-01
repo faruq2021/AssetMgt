@@ -74,7 +74,7 @@ const AuditAsset = () => {
     const response = await contractInstance.getUser(address);
     // const res = await response?.wait()
     console.log("getuser: ", response);
-    console.log("getuser: ", Number(response[1]));
+    console.log("Age: ", Number(response[1]));
     console.log("getuser: ", response[2].toString());
     console.log("getuser: ", parseFloat(response[3]));
   };
